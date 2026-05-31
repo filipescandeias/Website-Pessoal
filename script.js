@@ -59,7 +59,13 @@ const translations = {
         "time-worten": "Novembro 2021 - Maio 2022",
         "worten-title": "Vendedor/Resolve - Worten Águeda",
         "worten-desc": "Prestei atendimento especializado ao cliente, realizando reparação e diagnóstico de avarias em telemóveis, bem como a gestão de garantias e processos de assistência técnica.",
-        
+        "time-matecnic": "Setembro de 2020 - Dezembro de 2020",
+        "matecnic-title": "Técnico de Informática - Matecnic",
+        "matecnic-desc": "Fui responsável por prestar suporte técnico a clientes, incluindo a instalação e configuração de hardware e software, resolução de problemas técnicos e manutenção de sistemas informáticos, garantindo a satisfação do cliente e o bom funcionamento dos equipamentos.",
+        "time-cma": "Junho de 2018 - Julho de 2018 / Abril de 2019 - Junho de 2019",
+        "cma-title": "Técnico de Informática - Câmara Municipal de Águeda",
+        "cma-desc": "Prestei suporte técnico direto aos utilizadores, sendo responsável pela instalação e configuração de hardware e software, bem como pela manutenção preventiva e corretiva de computadores e redes da autarquia.",
+
         // Projetos
         "projects-title": "Projetos em Destaque",
         "proj1-title": "Plataforma de Visualização Meteorológica",
@@ -134,6 +140,12 @@ const translations = {
         "time-worten": "November 2021 - May 2022",
         "worten-title": "Sales & Tech Support (Resolve) - Worten Águeda",
         "worten-desc": "Provided specialized customer service, performing repairs and troubleshooting diagnostics on mobile phones, as well as managing warranties and technical assistance processes.",
+        "time-matecnic": "September 2020 - December 2020",
+    "matecnic-title": "IT Technician - Matecnic",
+    "matecnic-desc": "Responsible for providing technical support to clients, including installing and configuring hardware and software, troubleshooting technical issues, and maintaining IT systems to ensure customer satisfaction and optimal equipment performance.",
+    "time-cma": "June 2018 - July 2018 / April 2019 - June 2019",
+    "cma-title": "IT Technician - Águeda Town Hall",
+    "cma-desc": "Provided direct technical support to users, managing the installation and configuration of hardware and software, as well as the preventive and corrective maintenance of the municipality's computers and networks.",
         
         // Projects
         "projects-title": "Featured Projects",
