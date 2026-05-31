@@ -294,3 +294,27 @@ terminalInput.addEventListener('keydown', function(e) {
         terminalBody.scrollTop = terminalBody.scrollHeight;
     }
 });
+
+// ==========================================
+// DETEÇÃO DE IDIOMA VIA URL (Query Parameters)
+// ==========================================
+window.addEventListener('DOMContentLoaded', () => {
+    // 1. Cria um objeto para ler os parâmetros do URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang'); // Vai buscar o valor de 'lang'
+
+    // 2. Se o parâmetro existir e for válido, altera o idioma do site
+    if (langParam === 'pt' || langParam === 'en') {
+        // Altera a tua variável global que controla o idioma atual do site
+        currentLang = langParam; 
+        
+        // Altera o atributo 'lang' da tag <html> caso uses para acessibilidade/CSS
+        document.documentElement.lang = langParam;
+
+        // 3. CHAMA AQUI A TUA FUNÇÃO QUE ATUALIZA OS TEXTOS DA PÁGINA
+        // (Exemplo: atualizarTextosDoSite() ou a função que muda as strings do HTML)
+        if (typeof atualizarTextosDoSite === 'function') {
+            atualizarTextosDoSite(); 
+        }
+    }
+});
