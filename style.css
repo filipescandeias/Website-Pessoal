@@ -252,8 +252,8 @@ body {
 .skill-category {
     flex: 1; /* Faz com que ambas as boxes tenham exatamente a mesma largura */
     max-width: 480px; /* Impede que as boxes fiquem demasiado largas em ecrãs gigantes */
-    background: rgba(255, 255, 255, 0.02); /* Um fundo sutil para dar a ideia de "box" */
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--card-bg); /* Um fundo sutil para dar a ideia de "box" */
+    border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 12px;
 }
