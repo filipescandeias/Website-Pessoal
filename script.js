@@ -152,6 +152,14 @@ const translations = {
     }
 };
 
+let currentLang = 'pt';
+
+// Elementos HTML necessários para a tradução
+const langToggle = document.getElementById('lang-toggle');
+const terminalWelcome = document.getElementById('terminal-welcome');
+const terminalPromptText = document.getElementById('terminal-prompt-text');
+
+// NOVA FUNÇÃO: Faz o trabalho real de atualizar as palavras no ecrã
 function atualizarIdioma() {
     langToggle.innerText = currentLang.toUpperCase();
     
@@ -179,38 +187,6 @@ function atualizarIdioma() {
 langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
     atualizarIdioma();
-});
-
-let currentLang = 'pt';
-
-// Lógica de Alternância de Idioma
-const langToggle = document.getElementById('lang-toggle');
-const terminalWelcome = document.getElementById('terminal-welcome');
-const terminalPromptText = document.getElementById('terminal-prompt-text');
-
-langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'pt' ? 'en' : 'pt';
-    langToggle.innerText = currentLang.toUpperCase();
-    
-    // Atualiza todos os elementos com data-key
-    document.querySelectorAll('[data-key]').forEach(element => {
-        const key = element.getAttribute('data-key');
-        if (translations[currentLang][key]) {
-            // Se o elemento contiver ícones filhos (como o botão do CV), preserva-os
-            const icon = element.querySelector('i');
-            if (icon) {
-                element.innerHTML = '';
-                element.appendChild(icon);
-                element.innerHTML += ' ' + translations[currentLang][key];
-            } else {
-                element.innerText = translations[currentLang][key];
-            }
-        }
-    });
-
-    // Atualizações específicas do terminal dinâmico
-    terminalWelcome.innerHTML = translations[currentLang]["terminal-welcome-msg"];
-    terminalPromptText.innerText = translations[currentLang]["terminal-prompt-info"];
 });
 
 // ==========================================
