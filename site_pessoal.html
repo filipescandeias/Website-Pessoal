@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipe | Portfólio & CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação Fixo -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;Filipe./&gt;</a>
+            <div class="nav-links">
+                <a href="#sobre" data-key="nav-about">Sobre mim</a>
+                <a href="#competencias" data-key="nav-skills">Competências</a>
+                <a href="#percurso" data-key="nav-path">Percurso</a>
+                <a href="#projetos" data-key="nav-projects">Projetos</a>
+                <a href="#terminal" data-key="nav-terminal">Terminal</a>
+                
+                <!-- Seletor de Idioma -->
+                <button id="lang-toggle" class="nav-icon-btn" aria-label="Mudar idioma">PT</button>
+                <!-- Alternador de Tema -->
+                <button id="theme-toggle" class="nav-icon-btn" aria-label="Mudar tema"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-image-container">
+                <img src="filipe.jpeg" alt="Foto de Filipe" class="hero-profile-img">
+            </div>
+            <div class="hero-content">
+                <h1 data-key="header">Olá, eu sou o <span class="highlight" data-key="filipe">Filipe</span></h1>
+                <p class="subtitle" data-key="hero-subtitle">Estudante de Engenharia Informática Aplicada</p>
+                <p data-key="hero-description">Focado em criar soluções lógicas, código limpo e arquiteturas robustas.</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn primary" data-key="hero-btn-projects">Ver Projetos</a>
+                    <a href="#percurso" class="btn secondary" data-key="hero-btn-path">Ver Percurso</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secção Sobre Mim & Competências -->
+    <section id="sobre" class="section">
+        <h2 class="section-title" data-key="about-title">Sobre Mim</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-key="about-text-p1">Olá! O meu nome é Filipe Candeias.</p>
+                <p data-key="about-text-p2">Sou estudante da Licenciatura em Engenharia Informática Aplicada na Escola Superior de Tecnologia e Gestão de Águeda (ESTGA), da Universidade de Aveiro.</p>
+                <p data-key="about-text-p3">Sou natural e residente de Águeda. Desde cedo desenvolvi um grande interesse pela tecnologia e pela informática, procurando compreender o funcionamento das ferramentas digitais e explorar novas soluções para diferentes desafios.</p>
+                <p data-key="about-text-p4">Considero-me uma pessoa proativa, criativa e com uma forte capacidade de aprendizagem. Gosto de enfrentar novos desafios e de adquirir constantemente novos conhecimentos, tanto a nível académico como pessoal. Procuro sempre realizar o meu trabalho com dedicação e responsabilidade, mantendo uma atitude positiva e colaborativa em qualquer contexto.</p>
+                <p data-key="about-text-p5">Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.</p>
+                <p data-key="about-text-p6">Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.</p>
+                <div class="cv-download">
+                    <a href="cv.pdf" download class="btn primary" id="cv-btn"><i class="fas fa-file-download"></i> <span data-key="about-cv">Descarregar CV (PDF)</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h3 class="video-title" data-key="video-section-title"><i class="fab fa-youtube"></i> Apresentação em Vídeo</h3>
+            <div class="video-responsive">
+                <iframe 
+                    src="https://www.youtube.com/embed/INSERE_AQUI_O_ID_DO_VIDEO" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias" class="section bg-alt">
+        <h2 class="section-title" data-key="skills-title">Competências</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 data-key="skills-backend">Backend</h3>
+                <div class="badges">
+                    <span class="badge">Java (Spring Boot / Swing)</span>
+                    <span class="badge">C</span>
+                    <span class="badge">Python</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3 data-key="skills-frontend">Frontend & Dados</h3>
+                <div class="badges">
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">HTML / CSS</span>
+                    <span class="badge">SQL (PostgreSQL / MySQL)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="percurso" class="section">
+        <h2 class="section-title" data-key="path-title">Percurso Académico & Profissional</h2>
+        
+        <div class="journey-container">
+            <!-- Educação Académica -->
+            <div class="journey-column">
+                <h3 class="column-subtitle"><i class="fas fa-graduation-cap"></i> <span data-key="title-academic-col">Educação Académica</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-leia">Setembro 2024 - Presente</span>
+                            <h4 data-key="leia">Licenciatura em Engenharia Informática Aplicada</h4>
+                            <p class="institution" data-key="academic-inst">Escola Superior de Tecnologia e Gestão de Águeda</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="estga1">Atualmente frequento a Licenciatura em Engenharia Informática Aplicada, onde tenho vindo a construir uma base sólida em informática e desenvolvimento de software. Ao longo do curso, tenho desenvolvido competências em programação, bases de dados, sistemas operativos e redes de computadores através de trabalhos académicos e projetos práticos. Estas experiências têm fortalecido as minhas capacidades de resolução de problemas, trabalho em equipa e comunicação, ao mesmo tempo que aumentam o meu interesse pela tecnologia e pela aprendizagem contínua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-ctesp">Setembro 2019 - Setembro 2021</span>
+                            <h4 data-key="ctesp">Técnico Superior Profissional em Instalações Elétricas e Automação</h4>
+                            <p class="institution" data-key="academic-inst">Escola Superior de Tecnologia e Gestão de Águeda</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="ctesp-desc">Frequentei uma formação na área de redes elétricas e automação industrial, onde desenvolvi conhecimentos em instalação, manutenção e análise de redes de energia, comunicação e sistemas de segurança. Ao longo da formação, tive também contacto com automação industrial, incluindo programação de autómatos e utilização de ferramentas de simulação e programação de robôs como o RoboDK. Estas experiências permitiram-me reforçar competências técnicas e desenvolver capacidades de resolução de problemas e adaptação a diferentes contextos técnicos.",</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-it">Setembro 2016 - Julho 2019</span>
+                            <h4 data-key="it-title">Técnico de Gestão e Programação de Sistemas Informáticos</h4>
+                            <p class="institution" data-key="it-inst">Escola Secundária Adolfo Portela</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="it-desc">Frequentei o curso de Técnico de Gestão e Programação de Sistemas Informáticos, onde adquiri conhecimentos em programação, bases de dados e sistemas operativos. Desenvolvi competências em resolução de problemas e trabalho em equipa, além de uma sólida compreensão das metodologias de desenvolvimento de software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiência Profissional -->
+            <div class="journey-column">
+                <h3 class="column-subtitle"><i class="fas fa-briefcase"></i> <span data-key="title-professional-col">Experiência Profissional</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-brico-pt">Setembro 2023 - Presente</span>
+                            <h4 data-key="brico-pt-title">Vendedor - Bricomarché Águeda</h4>
+                            <p class="institution" data-key="part-time">Part-time</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="brico-pt-desc">Desempenho funções de atendimento e aconselhamento ao cliente em loja, reposição e organização de stock, bem como gestão e etiquetagem de produtos, garantindo o bom funcionamento do espaço comercial.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-brico-file">Abril 2023 - Agosto 2023</span>
+                            <h4 data-key="brico-file-title">Responsável de Ficheiro - Bricomarché Águeda</h4>
+                            <p class="institution" data-key="full-time">Full-time</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="brico-file-desc">Fui responsável pela gestão de stock e controlo de inventário da loja, assegurando a comunicação com fornecedores e apoiando a supervisão e coordenação das operações diárias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-brico-ft">Outubro 2022 - Abril 2023</span>
+                            <h4 data-key="brico-ft-title">Vendedor - Bricomarché Águeda</h4>
+                            <p class="institution" data-key="full-time">Full-time</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="brico-ft-desc">Realizei atendimento e apoio ao cliente, reposição e organização de produtos em loja, bem como tarefas de gestão e etiquetagem de artigos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="date" data-key="time-worten">Novembro 2021 - Maio 2022</span>
+                            <h4 data-key="worten-title">Vendedor/Resolve - Worten Águeda</h4>
+                            <p class="institution" data-key="full-time">Full-time</p>
+                            <button class="accordion-btn"><span data-key="learn-more">Saber mais</span> <i class="fas fa-chevron-down"></i></button>
+                            <div class="accordion-content">
+                                <p data-key="worten-desc">Prestei atendimento especializado ao cliente, realizando reparação e diagnóstico de avarias em telemóveis, bem como a gestão de garantias e processos de assistência técnica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Portfólio -->
+    <section id="projetos" class="section bg-alt">
+        <h2 class="section-title" data-key="projects-title">Projetos em Destaque</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Java</span> <span class="tag">MySQL</span>
+                    </div>
+                    <h3 data-key="proj3-title">Sistema de Gestão de Eventos</h3>
+                    <p data-key="proj3-desc">Aplicação desenvolvida em Java para apoiar a gestão de eventos de espaços culturais, utilizando estruturas de dados e persistência em ficheiros para organizar salas, eventos e recursos.</p>
+                    <a href="https://github.com/filipescandeias/PDA" class="project-link"><span data-key="view-code">Ver Código</span> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span> <span class="tag">PostgreSQL</span>
+                    </div>
+                    <h3 data-key="proj2-title">Sistema de Gestão Desportiva</h3>
+                    <p data-key="proj2-desc">Aplicação web para gestão desportiva, permitindo a organização de equipas, atletas e atividades, de forma a garantir uma gestão mais eficiente e estruturada das rotinas associadas ao nível amador.</p>
+                    <a href="https://github.com/filipescandeias/PAW" class="project-link"><span data-key="view-code">Ver Código</span> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML</span> <span class="tag">Java</span> <span class="tag">PostGIS</span> <span class="tag">MongoDB</span>
+                    </div>
+                    <h3 data-key="proj1-title">Plataforma de Visualização Meteorológica</h3>
+                    <p data-key="proj1-desc">Aplicação web interativa que mapeia dados geográficos e meteorológicos por distritos e freguesias através de camadas de mapas dinâmicas.</p>
+                    <a href="https://github.com/filipescandeias/PTABD" class="project-link"><span data-key="view-code">Ver Código</span> <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal CLI -->
+    <section id="terminal" class="section">
+        <h2 class="section-title" data-key="terminal-title">Consola Interativa</h2>
+        <p class="center-text" id="terminal-prompt-text" data-key="terminal-prompt-info">Digita comandos e fica a saber mais sobre mim.</p>
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="term-btn red"></div> <div class="term-btn yellow"></div> <div class="term-btn green"></div>
+                <span class="term-title">filipe@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div class="output" id="terminal-welcome" data-key="terminal-welcome-msg">Bem-vindo ao meu terminal. Digita <span class="highlight-term">help</span> para ver os comandos disponíveis.</div>
+                <div class="input-line">
+                    <span class="prompt">filipe@portfolio:~$</span>
+                    <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p data-key="footer-text">&copy; 2026 Filipe. Desenvolvido com foco em Usabilidade & Performance.</p>
+        <div class="social-icons">
+            <a href="https://github.com/filipescandeias" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/filipescandeias" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
