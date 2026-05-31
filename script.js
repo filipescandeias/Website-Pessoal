@@ -152,6 +152,35 @@ const translations = {
     }
 };
 
+function atualizarIdioma() {
+    langToggle.innerText = currentLang.toUpperCase();
+    
+    // Atualiza todos os elementos com data-key
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[currentLang][key]) {
+            const icon = element.querySelector('i');
+            if (icon) {
+                element.innerHTML = '';
+                element.appendChild(icon);
+                element.innerHTML += ' ' + translations[currentLang][key];
+            } else {
+                element.innerHTML = translations[currentLang][key]; // Alterado para innerHTML para ler os spans
+            }
+        }
+    });
+
+    // Atualizações específicas do terminal dinâmico
+    if(terminalWelcome) terminalWelcome.innerHTML = translations[currentLang]["terminal-welcome-msg"];
+    if(terminalPromptText) terminalPromptText.innerText = translations[currentLang]["terminal-prompt-info"];
+}
+
+// Evento de clique no botão mantém-se, mas agora apenas chama a função acima
+langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'pt' ? 'en' : 'pt';
+    atualizarIdioma();
+});
+
 let currentLang = 'pt';
 
 // Lógica de Alternância de Idioma
@@ -303,18 +332,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const langParam = urlParams.get('lang'); // Vai buscar o valor de 'lang'
 
-    // 2. Se o parâmetro existir e for válido, altera o idioma do site
+    // 2. Se o parâmetro existir e for válido ('pt' ou 'en'), altera o idioma do site
     if (langParam === 'pt' || langParam === 'en') {
-        // Altera a tua variável global que controla o idioma atual do site
         currentLang = langParam; 
-        
-        // Altera o atributo 'lang' da tag <html> caso uses para acessibilidade/CSS
         document.documentElement.lang = langParam;
 
-        // 3. CHAMA AQUI A TUA FUNÇÃO QUE ATUALIZA OS TEXTOS DA PÁGINA
-        // (Exemplo: atualizarTextosDoSite() ou a função que muda as strings do HTML)
-        if (typeof atualizarTextosDoSite === 'function') {
-            atualizarTextosDoSite(); 
-        }
+        // 3. Executa a função que acabámos de isolar lá em cima para reescrever o HTML
+        atualizarIdioma(); 
     }
 });
