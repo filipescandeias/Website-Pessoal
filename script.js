@@ -22,6 +22,7 @@ const translations = {
         "about-text-p5": "Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.",
         "about-text-p6": "Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.",
         "about-cv": "Descarregar CV (PDF)",
+        "cv-file": "CV Português.pdf",
         "skills-title": "Competências",
         "skills-backend": "Backend",
         "skills-frontend": "Frontend & Dados",
@@ -96,6 +97,7 @@ const translations = {
         "about-text-p5": "In my free time, I enjoy gaming, board games, and building with LEGO, activities that stimulate logical thinking, creativity, and problem-solving skills. I am also interested in sports, valuing physical activity as a way to promote well-being and personal growth.",
         "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my personal and professional development.",
         "about-cv": "Download CV (PDF)",
+        "cv-file": "CV Inglês.pdf",
         "skills-title": "Skills",
         "skills-backend": "Backend",
         "skills-frontend": "Frontend & Data",
@@ -152,6 +154,23 @@ const translations = {
     }
 };
 
+// ==========================================
+// 0. FORÇAR INÍCIO NO TOPO DA PÁGINA
+// ==========================================
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual'; // Impede o browser de repor o scroll antigo
+}
+
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0); // Garante o topo mesmo ao fazer refresh
+});
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 10);
+});
+
 let currentLang = 'pt';
 
 // Elementos HTML necessários para a tradução
@@ -163,7 +182,13 @@ const terminalPromptText = document.getElementById('terminal-prompt-text');
 function atualizarIdioma() {
     langToggle.innerText = currentLang.toUpperCase();
     
-    // Atualiza todos os elementos com data-key
+    // 1. ATUALIZA O LINK DO ANEXO DO CV DINAMICAMENTE
+    const cvBtn = document.getElementById('cv-btn');
+    if (cvBtn && translations[currentLang]["cv-file"]) {
+        cvBtn.setAttribute('href', translations[currentLang]["cv-file"]);
+    }
+
+    // Atualiza todos os elementos com data-key (o teu código que já existia)
     document.querySelectorAll('[data-key]').forEach(element => {
         const key = element.getAttribute('data-key');
         if (translations[currentLang][key]) {
@@ -173,7 +198,7 @@ function atualizarIdioma() {
                 element.appendChild(icon);
                 element.innerHTML += ' ' + translations[currentLang][key];
             } else {
-                element.innerHTML = translations[currentLang][key]; // Alterado para innerHTML para ler os spans
+                element.innerHTML = translations[currentLang][key];
             }
         }
     });

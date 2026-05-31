@@ -6,6 +6,7 @@
     <title>Filipe | Portfólio & CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
@@ -58,13 +59,12 @@
                 <p data-key="about-text-p5">Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.</p>
                 <p data-key="about-text-p6">Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.</p>
                 <div class="cv-download">
-                    <a href="cv.pdf" download class="btn primary" id="cv-btn"><i class="fas fa-file-download"></i> <span data-key="about-cv">Descarregar CV (PDF)</span></a>
+                    <a href="CV Português.pdf" download class="btn primary" id="cv-btn"><i class="fas fa-file-download"></i> <span data-key="about-cv">Descarregar CV (PDF)</span></a>
                 </div>
             </div>
         </div>
 
         <div class="video-section">
-            <h3 class="video-title" data-key="video-section-title"><i class="fab fa-youtube"></i> Apresentação em Vídeo</h3>
             <div class="video-responsive">
                 <iframe 
                     src="https://www.youtube.com/embed/INSERE_AQUI_O_ID_DO_VIDEO" 
@@ -79,23 +79,45 @@
 
     <section id="competencias" class="section bg-alt">
         <h2 class="section-title" data-key="skills-title">Competências</h2>
+        
         <div class="skills-container">
+            
             <div class="skill-category">
                 <h3 data-key="skills-backend">Backend</h3>
-                <div class="badges">
-                    <span class="badge">Java (Spring Boot / Swing)</span>
-                    <span class="badge">C</span>
-                    <span class="badge">Python</span>
+                <div class="skills-grid">
+                    <div class="skill-card java">
+                        <i class="devicon-java-plain colored"></i>
+                        <span>Java (Spring Boot / Swing)</span>
+                    </div>
+                    <div class="skill-card c-lang">
+                        <i class="devicon-c-plain colored"></i>
+                        <span>C</span>
+                    </div>
+                    <div class="skill-card python">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
                 </div>
             </div>
+            
             <div class="skill-category">
                 <h3 data-key="skills-frontend">Frontend & Dados</h3>
-                <div class="badges">
-                    <span class="badge">JavaScript</span>
-                    <span class="badge">HTML / CSS</span>
-                    <span class="badge">SQL (PostgreSQL / MySQL)</span>
+                <div class="skills-grid">
+                    <div class="skill-card javascript">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card html-css">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML / CSS</span>
+                    </div>
+                    <div class="skill-card mysql">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>SQL (PostgreSQL / MySQL)</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -253,7 +275,7 @@
                 <div class="output" id="terminal-welcome" data-key="terminal-welcome-msg">Bem-vindo ao meu terminal. Digita <span class="highlight-term">help</span> para ver os comandos disponíveis.</div>
                 <div class="input-line">
                     <span class="prompt">filipe@portfolio:~$</span>
-                    <input type="text" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
                 </div>
             </div>
         </div>
