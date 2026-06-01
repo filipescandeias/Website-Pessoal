@@ -50,20 +50,30 @@
     <!-- Secção Sobre Mim & Competências -->
     <section id="sobre" class="section">
         <h2 class="section-title" data-key="about-title">Sobre Mim</h2>
+        
         <div class="about-grid">
-            <div class="about-text">
-                <p data-key="about-text-p1">Olá! O meu nome é Filipe Candeias.</p>
-                <p data-key="about-text-p2">Sou estudante da Licenciatura em Engenharia Informática Aplicada na Escola Superior de Tecnologia e Gestão de Águeda (ESTGA), da Universidade de Aveiro.</p>
-                <p data-key="about-text-p3">Sou natural e residente de Águeda. Desde cedo desenvolvi um grande interesse pela tecnologia e pela informática, procurando compreender o funcionamento das ferramentas digitais e explorar novas soluções para diferentes desafios.</p>
-                <p data-key="about-text-p4">Considero-me uma pessoa proativa, criativa e com uma forte capacidade de aprendizagem. Gosto de enfrentar novos desafios e de adquirir constantemente novos conhecimentos, tanto a nível académico como pessoal. Procuro sempre realizar o meu trabalho com dedicação e responsabilidade, mantendo uma atitude positiva e colaborativa em qualquer contexto.</p>
-                <p data-key="about-text-p5">Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.</p>
-                <p data-key="about-text-p6">Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-key="about-text-p1">Olá! O meu nome é Filipe Candeias.</p>
+                    <p data-key="about-text-p2">Sou estudante da Licenciatura em Engenharia Informática Aplicada na Escola Superior de Tecnologia e Gestão de Águeda (ESTGA), da Universidade de Aveiro.</p>
+                    <p data-key="about-text-p3">Sou natural e residente de Águeda. Desde cedo desenvolvi um grande interesse pela tecnologia e pela informática, procurando compreender o funcionamento das ferramentas digitais e explorar novas soluções para diferentes desafios.</p>
+                    <p data-key="about-text-p4">Considero-me uma pessoa proativa, criativa e com uma forte capacidade de aprendizagem. Gosto de enfrentar novos desafios e de adquirir constantemente novos conhecimentos, tanto a nível académico como pessoal. Procuro sempre realizar o meu trabalho com dedicação e responsabilidade, mantendo uma atitude positiva e colaborativa em qualquer context.</p>
+                    <p data-key="about-text-p5">Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.</p>
+                    <p data-key="about-text-p6">Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.</p>
+                </div>
+                
                 <div class="cv-download">
-                    <a href="CV Português.pdf" download class="btn primary" id="cv-btn"><i class="fas fa-file-download"></i> <span data-key="about-cv">Descarregar CV (PDF)</span></a>
+                    <a href="CV Português.pdf" download class="btn primary" id="cv-btn">
+                        <i class="fas fa-file-download"></i> <span data-key="about-cv">Descarregar CV (PDF)</span>
+                    </a>
                 </div>
             </div>
-        </div>
 
+            <div class="about-image-container">
+                <img src="filipecandeias.jpeg" alt="Filipe Candeias" class="about-img" />
+            </div>
+        </div>
+        
         <div class="video-section">
             <div class="video-responsive">
                 <iframe 
@@ -286,20 +296,53 @@
         </div>
     </section>
 
-    <!-- Terminal CLI -->
-    <section id="terminal" class="section">
-        <h2 class="section-title" data-key="terminal-title">Consola Interativa</h2>
-        <p class="center-text" id="terminal-prompt-text" data-key="terminal-prompt-info">Digita comandos e fica a saber mais sobre mim.</p>
-        <div class="terminal-window">
-            <div class="terminal-header">
-                <div class="term-btn red"></div> <div class="term-btn yellow"></div> <div class="term-btn green"></div>
-                <span class="term-title">filipe@portfolio:~</span>
+    <!-- Secção Explorador de Projetos e Interesses -->
+    <section id="workspace-section" class="section">
+        <h2 class="section-title" data-key="terminal-title">Explorador de Conteúdo</h2>
+        <p class="center-text" id="workspace-prompt-text">Navega pelas pastas à esquerda para abrir as galerias de imagens na área de trabalho.</p>
+        
+        <div class="integrated-workspace">
+            <!-- Barra Lateral: Árvore de Ficheiros -->
+            <div class="workspace-sidebar">
+                <div class="sidebar-header">
+                    <span><i class="fas fa-folder-open"></i> EXPLORER: FILIPE</span>
+                </div>
+                
+                <div class="file-tree">
+                    <div class="tree-item folder"><i class="fas fa-chevron-down"></i> <i class="fas fa-folder"></i> portfolio</div>
+                    <div class="tree-item file active" data-cmd="about">
+                        <i class="fab fa-markdown" style="color: #42a5f5;"></i> about_me.md
+                    </div>
+                    
+                    <div class="tree-item folder sub-folder"><i class="fas fa-chevron-down"></i> <i class="fas fa-folder"></i> interests</div>
+                    <div class="tree-item file sub-item" data-cmd="boardgames">
+                        <i class="fas fa-dice" style="color: #66bb6a;"></i> boardgames.log
+                    </div>
+                    <div class="tree-item file sub-item" data-cmd="gaming">
+                        <i class="fas fa-gamepad" style="color: #ffca28;"></i> gaming.log
+                    </div>
+                    <div class="tree-item file sub-item" data-cmd="travel">
+                        <i class="fas fa-plane" style="color: #477abc;"></i> viagens.log
+                    </div>
+                    <div class="tree-item file sub-item" data-cmd="movies">
+                        <i class="fas fa-film" style="color: #ab47bc;"></i> movies/tv_shows.log
+                    </div>
+                </div>
             </div>
-            <div class="terminal-body" id="terminal-body">
-                <div class="output" id="terminal-welcome" data-key="terminal-welcome-msg">Bem-vindo ao meu terminal. Digita <span class="highlight-term">help</span> para ver os comandos disponíveis.</div>
-                <div class="input-line">
-                    <span class="prompt">filipe@portfolio:~$</span>
-                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+
+            <!-- Área Principal Direita: Onde as Imagens Aparecem Grandes -->
+            <div class="workspace-display">
+                <div class="workspace-header">
+                    <div class="tab-indicator">
+                        <i class="fas fa-image"></i> <span id="active-tab-title">dashboard.view</span>
+                    </div>
+                </div>
+                <div class="workspace-body">
+                    <!-- ADICIONADO: Bloco de Introdução de Texto -->
+                    <div id="workspace-intro" style="margin-bottom: 25px; color: #e0e0e0; font-family: sans-serif; line-height: 1.6; font-size: 0.95rem;"></div>
+
+                    <!-- Grelha Principal de Imagens -->
+                    <div id="main-gallery-grid" class="main-gallery-grid"></div>
                 </div>
             </div>
         </div>

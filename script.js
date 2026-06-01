@@ -7,7 +7,7 @@ const translations = {
         "nav-skills": "Competências",
         "nav-path": "Percurso",
         "nav-projects": "Projetos",
-        "nav-terminal": "Terminal",
+        "nav-terminal": "Explorador",
         "header": "Olá, eu sou o <span class=\"highlight\" data-key=\"filipe\">Filipe</span>",
         "filipe": "Filipe",
         "hero-subtitle": "Estudante de Engenharia Informática Aplicada",
@@ -30,56 +30,50 @@ const translations = {
         "title-academic-col": "Educação Académica",
         "title-professional-col": "Experiência Profissional",
         
-        // Linha do tempo - Académica
         "time-leia": "Setembro 2024 - Presente",
         "leia": "Licenciatura em Engenharia Informática Aplicada",
         "academic-inst": "Escola Superior de Tecnologia e Gestão de Águeda",
-        "estga1": "Atualmente frequento a Licenciatura em Engenharia Informática Aplicada, onde tenho vindo a construir uma base sólida em informática e desenvolvimento de software. Ao longo do curso, tenho desenvolvido competências em programação, bases de dados, sistemas operativos e redes de computadores através de trabalhos académicos e projetos práticos. Estas experiências têm fortalecido as minhas capacidades de resolução de problemas, trabalho em equipa e comunicação, ao mesmo tempo que aumentam o meu interesse pela tecnologia e pela aprendizagem contínua.",
+        "estga1": "Atualmente frequento a Licenciatura em Engenharia Informática Aplicada, onde tenho vindo a construir uma base sólida em informática e desenvolvimento de software. Ao longo do curso, tenho desenvolvido competências em programação, bases de dados, sistemas operativos e redes de computadores através de trabalhos académicos e projetos práticos.",
         "time-ctesp": "Setembro 2019 - Setembro 2021",
         "ctesp": "Técnico Superior Profissional em Instalações Elétricas e Automação",
-        "ctesp-desc": "Frequentei uma formação na área de redes elétricas e automação industrial, onde desenvolvi conhecimentos em instalação, manutenção e análise de redes de energia, comunicação e sistemas de segurança. Ao longo da formação, tive também contacto com automação industrial, incluindo programação de autómatos e utilização de ferramentas de simulação e programação de robôs como o RoboDK. Estas experiências permitiram-me reforçar competências técnicas e desenvolver capacidades de resolução de problemas e adaptação a diferentes contextos técnicos.",
+        "ctesp-desc": "Frequentei uma formação na área de redes elétricas e automação industrial, onde desenvolvi conhecimentos em instalação, manutenção e análise de redes de energia, comunicação e sistemas de segurança.",
         "time-it": "Setembro 2016 - Julho 2019",
         "it-title": "Técnico de Gestão e Programação de Sistemas Informáticos",
         "it-inst": "Escola Secundária Adolfo Portela",
-        "it-desc": "Frequentei o curso de Técnico de Gestão e Programação de Sistemas Informáticos, onde adquiri conhecimentos em instalação, configuration e manutenção de hardware e software, bem como em redes e segurança de sistemas. Desenvolvi também competências em programação, bases de dados, desenvolvimento de aplicações e criação de sistemas web, incluindo a gestão de websites e servidores, o que reforçou o meu interesse pela área da informática.",
+        "it-desc": "Frequentei o curso de Técnico de Gestão e Programação de Sistemas Informáticos, onde adquiri conhecimentos em instalação, configuração e manutenção de hardware e software.",
         "learn-more": "Saber mais",
 
-        // Linha do tempo - Profissional
         "part-time": "Part-time",
         "full-time": "Full-time",
         "time-brico-pt": "Setembro 2023 - Presente",
         "brico-pt-title": "Vendedor - Bricomarché Águeda",
-        "brico-pt-desc": "Desempenho funções de atendimento e aconselhamento ao cliente em loja, reposição e organização de stock, bem como gestão e etiquetagem de produtos, garantindo o bom funcionamento do espaço comercial.",
+        "brico-pt-desc": "Desempenho funções de atendimento e aconselhamento ao cliente em loja, reposição e organização de stock.",
         "time-brico-file": "Abril 2023 - Agosto 2023",
         "brico-file-title": "Responsável de Ficheiro - Bricomarché Águeda",
-        "brico-file-desc": "Fui responsável pela gestão de stock e controlo de inventário da loja, assegurando a comunicação com fornecedores e apoiando a supervisão e coordenação das operações diárias.",
+        "brico-file-desc": "Fui responsável pela gestão de stock e controlo de inventário da loja, assegurando a comunicação com fornecedores.",
         "time-brico-ft": "Outubro 2022 - Abril 2023",
         "brico-ft-title": "Vendedor - Bricomarché Águeda",
-        "brico-ft-desc": "Realizei atendimento e apoio ao cliente, reposição e organização de produtos em loja, bem como tarefas de gestão e etiquetagem de artigos.",
+        "brico-ft-desc": "Realizei atendimento e apoio ao cliente, reposição e organização de produtos em loja.",
         "time-worten": "Novembro 2021 - Maio 2022",
         "worten-title": "Vendedor/Resolve - Worten Águeda",
-        "worten-desc": "Prestei atendimento especializado ao cliente, realizando reparação e diagnóstico de avarias em telemóveis, bem como a gestão de garantias e processos de assistência técnica.",
+        "worten-desc": "Prestei atendimento especializado ao cliente, realizando reparação e diagnóstico de avarias em telemóveis.",
         "time-matecnic": "Setembro de 2020 - Dezembro de 2020",
         "matecnic-title": "Técnico de Informática - Matecnic",
-        "matecnic-desc": "Fui responsável por prestar suporte técnico a clientes, incluindo a instalação e configuração de hardware e software, resolução de problemas técnicos e manutenção de sistemas informáticos, garantindo a satisfação do cliente e o bom funcionamento dos equipamentos.",
+        "matecnic-desc": "Fui responsável por prestar suporte técnico a clientes, incluindo a instalação e configuração de hardware e software.",
         "time-cma": "Junho de 2018 - Julho de 2018 / Abril de 2019 - Junho de 2019",
         "cma-title": "Técnico de Informática - Câmara Municipal de Águeda",
-        "cma-desc": "Prestei suporte técnico direto aos utilizadores, sendo responsável pela instalação e configuração de hardware e software, bem como pela manutenção preventiva e corretiva de computadores e redes da autarquia.",
+        "cma-desc": "Prestei suporte técnico direto aos utilizadores, sendo responsável pela instalação e configuração de hardware e software.",
 
-        // Projetos
         "projects-title": "Projetos em Destaque",
         "proj1-title": "Plataforma de Visualização Meteorológica",
-        "proj1-desc": "Aplicação web interativa que mapeia dados geográficos e meteorológicos por distritos e freguesias através de camadas de mapas dinâmicas.",
+        "proj1-desc": "Aplicação web interativa que mapeia dados geográficos e meteorológicos por distritos através de camadas de mapas.",
         "proj2-title": "Plataforma de Gestão Desportiva",
-        "proj2-desc": "Aplicação web para gestão desportiva, permitindo a organização de equipas, atletas e atividades, de forma a garantir uma gestão mais eficiente e estruturada das rotinas associadas ao nível amador.",
+        "proj2-desc": "Aplicação web para gestão desportiva, permitindo a organização de equipas, atletas e atividades ao nível amador.",
         "proj3-title": "Sistema de Gestão de Eventos",
-        "proj3-desc": "Aplicação desenvolvida em Java para apoiar a gestão de eventos de espaços culturais, utilizando estruturas de dados e persistência em ficheiros para organizar salas, eventos e recursos.",
+        "proj3-desc": "Aplicação desenvolvida em Java para apoiar a gestão de eventos de espaços culturais, utilizando estruturas de dados.",
         "view-code": "Ver Código",
         
-        // Terminal & Footer
-        "terminal-title": "Consola Interativa",
-        "terminal-prompt-info": "Digita comandos e fica a saber mais sobre mim.",
-        "terminal-welcome-msg": "Bem-vindo ao meu terminal. Digita <span class=\"highlight-term\">help</span> para ver os comandos disponíveis.",
+        "terminal-title": "Explorador de Conteúdo",
         "footer-text": "&copy; 2026 Filipe. Desenvolvido com foco em Usabilidade & Performance.",
         "video-section-title": "Apresentação em Vídeo"
     },
@@ -88,7 +82,7 @@ const translations = {
         "nav-skills": "Skills",
         "nav-path": "Journey",
         "nav-projects": "Projects",
-        "nav-terminal": "Terminal",
+        "nav-terminal": "Explorer",
         "header": "Hello, I am <span class=\"highlight\" data-key=\"filipe\">Filipe</span>",
         "filipe": "Filipe",
         "hero-subtitle": "Applied Informatics Engineering Student",
@@ -97,11 +91,11 @@ const translations = {
         "hero-btn-path": "View Journey",
         "about-title": "About Me",
         "about-text-p1": "Hello! My name is Filipe Candeias.",
-        "about-text-p2": "I am a student pursuing a Degree in Applied Informatics Engineering at the Higher School of Technology and Management of Águeda (ESTGA), University of Aveiro.",
-        "about-text-p3": "I was born and currently live in Águeda. From an early age, I developed a strong interest in technology and computer science, seeking to understand how digital tools work and exploring new solutions to different challenges.",
-        "about-text-p4": "I consider myself a proactive, creative person with a strong ability to learn. I enjoy facing new challenges and continuously acquiring new knowledge, both academically and personally. I always strive to carry out my work with dedication and responsibility while maintaining a positive and collaborative attitude in any environment.",
-        "about-text-p5": "In my free time, I enjoy gaming, board games, and building with LEGO, activities that stimulate logical thinking, creativity, and problem-solving skills. I am also interested in sports, valuing physical activity as a way to promote well-being and personal growth.",
-        "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my personal and professional development.",
+        "about-text-p2": "I am a student pursuing a Degree in Applied Informatics Engineering at ESTGA, University of Aveiro.",
+        "about-text-p3": "I was born and currently live in Águeda. From an early age, I developed a strong interest in technology and computer science.",
+        "about-text-p4": "I consider myself a proactive, creative person with a strong ability to learn. I enjoy facing new challenges and continuously acquiring new knowledge.",
+        "about-text-p5": "In my free time, I enjoy gaming, board games, and building with LEGO, activities that stimulate logical thinking and creativity.",
+        "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my development.",
         "about-cv": "Download CV (PDF)",
         "cv-file": "CV Inglês.pdf",
         "skills-title": "Skills",
@@ -111,56 +105,50 @@ const translations = {
         "title-academic-col": "Academic Education",
         "title-professional-col": "Professional Experience",
         
-        // Timeline - Academic
         "time-leia": "September 2024 - Present",
         "leia": "Degree in Applied Informatics Engineering",
         "academic-inst": "Higher School of Technology and Management of Águeda",
-        "estga1": "I am currently pursuing a degree in Applied Informatics Engineering, building a solid foundation in computer science and software development. Throughout the course, I have developed skills in programming, databases, operating systems, and computer networks through academic work and practical projects. These experiences have strengthened my problem-solving, teamwork, and communication skills while further increasing my interest in technology and continuous learning.",
+        "estga1": "I am currently pursuing a degree in Applied Informatics Engineering, building a solid foundation in computer science and software development.",
         "time-ctesp": "September 2019 - September 2021",
         "ctesp": "Higher Technical Professional in Electrical Installations and Automation",
-        "ctesp-desc": "Trained in the field of electrical networks and industrial automation, where I developed knowledge in installation, maintenance, and analysis of power networks, communication, and security systems. Throughout the training, I also worked with industrial automation, including PLC programming and using simulation and robot programming tools like RoboDK.",
+        "ctesp-desc": "Trained in the field of electrical networks and industrial automation, developing knowledge in power networks and PLC programming.",
         "time-it": "September 2016 - July 2019",
         "it-title": "IT Systems Management and Programming Technician",
         "it-inst": "Adolfo Portela Secondary School",
-        "it-desc": "Attended the IT Systems Management and Programming course, acquiring knowledge in hardware and software installation, configuration, and maintenance, as well as networks and systems security. I also developed skills in programming, databases, application development, and web systems creation.",
+        "it-desc": "Attended the IT Systems Management and Programming course, acquiring knowledge in hardware and software installation.",
         "learn-more": "Learn more",
 
-        // Timeline - Professional
         "part-time": "Part-time",
         "full-time": "Full-time",
         "time-brico-pt": "September 2023 - Present",
         "brico-pt-title": "Sales Associate - Bricomarché Águeda",
-        "brico-pt-desc": "Responsible for customer service and advisory in-store, replenishment and organization of stock, as well as product management and labeling, ensuring the proper functioning of the commercial space.",
+        "brico-pt-desc": "Responsible for customer service and advisory in-store, replenishment and organization of stock.",
         "time-brico-file": "April 2023 - August 2023",
         "brico-file-title": "File & Inventory Manager - Bricomarché Águeda",
-        "brico-file-desc": "Responsible for stock management and store inventory control, ensuring communication with suppliers and supporting the supervision and coordination of daily operations.",
+        "brico-file-desc": "Responsible for stock management and store inventory control, ensuring communication with suppliers.",
         "time-brico-ft": "October 2022 - April 2023",
         "brico-ft-title": "Sales Associate - Bricomarché Águeda",
-        "brico-ft-desc": "Performed customer service and support, restocking and organizing products in-store, alongside article management and labeling tasks.",
+        "brico-ft-desc": "Performed customer service and support, restocking and organizing products in-store.",
         "time-worten": "November 2021 - May 2022",
         "worten-title": "Sales & Tech Support (Resolve) - Worten Águeda",
-        "worten-desc": "Provided specialized customer service, performing repairs and troubleshooting diagnostics on mobile phones, as well as managing warranties and technical assistance processes.",
+        "worten-desc": "Provided specialized customer service, performing repairs and troubleshooting diagnostics on mobile phones.",
         "time-matecnic": "September 2020 - December 2020",
-    "matecnic-title": "IT Technician - Matecnic",
-    "matecnic-desc": "Responsible for providing technical support to clients, including installing and configuring hardware and software, troubleshooting technical issues, and maintaining IT systems to ensure customer satisfaction and optimal equipment performance.",
-    "time-cma": "June 2018 - July 2018 / April 2019 - June 2019",
-    "cma-title": "IT Technician - Águeda Town Hall",
-    "cma-desc": "Provided direct technical support to users, managing the installation and configuration of hardware and software, as well as the preventive and corrective maintenance of the municipality's computers and networks.",
+        "matecnic-title": "IT Technician - Matecnic",
+        "matecnic-desc": "Responsible for providing technical support to clients, including installing and configuring hardware and software.",
+        "time-cma": "June 2018 - July 2018 / April 2019 - June 2019",
+        "cma-title": "IT Technician - Águeda Town Hall",
+        "cma-desc": "Provided direct technical support to users, managing the installation and configuration of hardware and software.",
         
-        // Projects
         "projects-title": "Featured Projects",
         "proj1-title": "Weather Visualization Platform",
-        "proj1-desc": "Interactive web application mapping geographic and weather data by districts and parishes through dynamic map layers.",
+        "proj1-desc": "Interactive web application mapping geographic and weather data by districts through dynamic map layers.",
         "proj2-title": "Sports Management Platform",
-        "proj2-desc": "Web application for sports management, allowing the organization of teams, athletes, and activities, ensuring efficient and structured management of amateur-level routines.",
+        "proj2-desc": "Web application for sports management, allowing the organization of teams, athletes, and activities.",
         "proj3-title": "Events Management System",
-        "proj3-desc": "Application developed in Java to support event management in cultural spaces, utilizing data structures and file persistence to organize rooms, events, and resources.",
+        "proj3-desc": "Application developed in Java to support event management in cultural spaces, utilizing data structures.",
         "view-code": "View Code",
         
-        // Terminal & Footer
-        "terminal-title": "Interactive Console",
-        "terminal-prompt-info": "Type commands and get to know more about me.",
-        "terminal-welcome-msg": "Welcome to my terminal. Type <span class=\"highlight-term\">help</span> to see available commands.",
+        "terminal-title": "Content Explorer",
         "footer-text": "&copy; 2026 Filipe. Developed with a focus on Usability & Performance.",
         "video-section-title": "Video Presentation"
     }
@@ -170,37 +158,24 @@ const translations = {
 // 0. FORÇAR INÍCIO NO TOPO DA PÁGINA
 // ==========================================
 if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual'; // Impede o browser de repor o scroll antigo
+    history.scrollRestoration = 'manual';
 }
 
-window.addEventListener('beforeunload', () => {
-    window.scrollTo(0, 0); // Garante o topo mesmo ao fazer refresh
-});
-
+window.addEventListener('beforeunload', () => { window.scrollTo(0, 0); });
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'instant' });
-    }, 10);
+    setTimeout(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, 10);
 });
 
 let currentLang = 'pt';
-
-// Elementos HTML necessários para a tradução
 const langToggle = document.getElementById('lang-toggle');
-const terminalWelcome = document.getElementById('terminal-welcome');
-const terminalPromptText = document.getElementById('terminal-prompt-text');
 
-// NOVA FUNÇÃO: Faz o trabalho real de atualizar as palavras no ecrã
 function atualizarIdioma() {
     langToggle.innerText = currentLang.toUpperCase();
-    
-    // 1. ATUALIZA O LINK DO ANEXO DO CV DINAMICAMENTE
     const cvBtn = document.getElementById('cv-btn');
     if (cvBtn && translations[currentLang]["cv-file"]) {
         cvBtn.setAttribute('href', translations[currentLang]["cv-file"]);
     }
 
-    // Atualiza todos os elementos com data-key (o teu código que já existia)
     document.querySelectorAll('[data-key]').forEach(element => {
         const key = element.getAttribute('data-key');
         if (translations[currentLang][key]) {
@@ -214,17 +189,14 @@ function atualizarIdioma() {
             }
         }
     });
-
-    // Atualizações específicas do terminal dinâmico
-    if(terminalWelcome) terminalWelcome.innerHTML = translations[currentLang]["terminal-welcome-msg"];
-    if(terminalPromptText) terminalPromptText.innerText = translations[currentLang]["terminal-prompt-info"];
 }
 
-// Evento de clique no botão mantém-se, mas agora apenas chama a função acima
 langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
     atualizarIdioma();
 });
+
+atualizarIdioma();
 
 // ==========================================
 // 2. ALTERNADOR DE TEMA (Dark/Light Mode)
@@ -252,7 +224,6 @@ accordions.forEach(btn => {
         this.classList.toggle('active');
         const content = this.nextElementSibling;
         const iconChevron = this.querySelector('i');
-        
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
             iconChevron.className = 'fas fa-chevron-down';
@@ -264,93 +235,109 @@ accordions.forEach(btn => {
 });
 
 // ==========================================
-// 4. CONSOLA INTERATIVA (Terminal CLI)
+// 4. SISTEMA DE REATIVIDADE DO EXPLORADOR (ATUALIZADO COM INTRODUÇÃO)
 // ==========================================
-const terminalInput = document.getElementById('terminal-input');
-const terminalBody = document.getElementById('terminal-body');
+const commandGalleries = {
+    about: [
+        'img/v1.jpg', 'img/v3.jpg', 'img/bg1.jpg', 
+        'img/vg2.jpg', 'img/ms1.jpg', 'img/ms2.jpg' // 6 imagens
+    ],
+    gaming: [
+        'img/vg1.jpeg', 'img/vg2.jpg', 'img/vg3.png', 
+        'img/vg4.jpg', 'img/vg5.png', 'img/vg6.jpg' // 6 imagens
+    ],
+    boardgames: [
+        'img/bg1.jpg', 'img/bg2.jpg', 'img/bg3.jpg', 
+        'img/bg4.jpg', 'img/bg5.jpeg', 'img/bg6.jpg' // 6 imagens
+    ],
+    travel: [
+        'img/v1.jpg', 'img/v2.jpg', 'img/v3.jpg', 
+        'img/v4.jpg', 'img/v5.jpg', 'img/v6.jpg' // 6 imagens
+    ],
+    movies: [
+        'img/ms1.jpg', 'img/ms2.jpg', 'img/ms3.jpg', 
+        'img/ms4.jpg', 'img/ms5.jpg', 'img/ms6.jpg' // 6 imagens
+    ]
+};
 
-// Comandos do Terminal traduzidos dinamicamente
-const terminalCommands = {
+// NOVO: Dicionário de introduções textuais para cada pasta/ficheiro (Suporta Multilíngue)
+const folderIntros = {
     pt: {
-        help: "Comandos disponíveis:\n- about: Breve descrição sobre mim\n- skills: Tecnologias e stacks\n- interests: Descobre os meus hobbys (ou usa /gaming, /boardgames, /movies)\n- clear: Limpa o ecrã",
-        about: "Filipe - Estudante de Engenharia Informática Aplicada.\nApaixonado por estruturação lógica de código, jogos de estratégia e desenvolvimento de sistemas funcionais.",
-        skills: "Backend: Java, C, Python\nFrontend: JavaScript, HTML/CSS\nBases de Dados: PostgreSQL, MySQL",
-        
-        // Novos comandos de interesses (com suporte a HTML para links clicáveis)
-        interests: "<b>Interesses do Filipe:</b><br>- <b>gaming</b>: Conta da Steam.<br>- <b>boardgames</b>: A minha coleção no BoardGameGeek (BGG).<br>- <b>movies</b>: Filmes e séries favoritos.<br><br><i>Dica: Podes digitar diretamente <span style='color: #00aaff'>gaming</span>, <span style='color: #00aaff'>boardgames</span> ou <span style='color: #00aaff'>movies</span></i>",
-        gaming: "<b>Gaming:</b> Adoro jogos que desafiam a estratégia e a lógica.<br>• <b>Steam ID:</b> <a href='https://steamcommunity.com/id/imjustacat/' target='_blank' style='color: #00aaff; text-decoration: underline;'>Just a Cat</a><br>",
-        boardgames: "<b>Board Games:</b> Grande fã de jogos de tabuleiro modernos (Eurogames e estratégia).<br>• <b>BoardGameGeek (BGG):</b> <a href='https://boardgamegeek.com/profile/FilipeCandeias/' target='_blank' style='color: #00aaff; text-decoration: underline;'>FilipeCandeias</a>",
-        movies: "<b>Movies & TV Shows:</b> Fascinado por comédia, mistério, ficção científica e ação.<br>• <b>Letterboxd:</b> <a href='https://boxd.it/98HRZ' target='_blank' style='color: #00aaff; text-decoration: underline;'>FilipeCandeias</a>",
-        notRecognized: "Comando não reconhecido: "
+        about: "<strong>Visão Geral:</strong> Uma amostra visual do meu universo de interesses. Explora a grelha abaixo para veres um resumo dos meus principais hobbies, passatempos e atividades favoritas.",
+        gaming: "<strong>Jogos:</strong> Nos meus tempos livres, os videojogos são a minha fuga perfeita. Tenho uma enorme preferência por RPGs profundos, narrativas cinematográficas marcantes e mundos abertos que recompensam a exploração e o raciocínio.",
+        boardgames: "<strong>Jogos de Tabuleiro:</strong> Um olhar sobre a minha mesa de jogo. Adoro explorar títulos de estratégia que desafiam o raciocínio, desde cenários altamente assimétricos e competitivos até mecânicas fluidas de gestão de recursos, cartas e planeamento tático.",
+        travel: "<strong>Viagens:</strong> Fascinado por explorar novos lugares e culturas, aproveito sempre que posso para registar memórias, paisagens e novas descobertas pelo mundo.",
+        movies: "<strong>Cinema & Séries:</strong> Gosto de acompanhar e analisar obras de Ficção Científica, Fantasia e Suspense, organizando as minhas críticas e registos no Letterboxd.",
+        sports: "<strong>Desporto:</strong> Adepto de um estilo de vida ativo, tanto a praticar como a acompanhar. Divido o gosto pelo futebol, basquetebol e voleibol com atividades ao ar livre."
     },
     en: {
-        help: "Available commands:\n- about: Brief description about me\n- skills: Technologies and stacks\n- interests: Discover my hobbies (or use /gaming, /boardgames, /movies)\n- clear: Clear the screen",
-        about: "Filipe - Applied Informatics Engineering Student.\nPassionate about logical code structure, strategic games, and developing functional systems.",
-        skills: "Backend: Java, C, Python\nFrontend: JavaScript, HTML/CSS\nDatabase: PostgreSQL, MySQL",
-        
-        // New interest commands (with HTML support)
-        interests: "<b>Filipe's Interests:</b><br>- <b>gaming</b>: My Steam and Epic Games accounts.<br>- <b>boardgames</b>: My collection on BoardGameGeek (BGG).<br>- <b>movies</b>: Favorite movies and shows.<br><br><i>Tip: You can type directly <span style='color: #00aaff'>gaming</span>, <span style='color: #00aaff'>boardgames</span> or <span style='color: #00aaff'>movies</span></i>",
-        gaming: "<b>Gaming:</b> I love games that challenge strategy and logic.<br>• <b>Steam ID:</b> <a href='https://steamcommunity.com/id/imjustacat/' target='_blank' style='color: #00aaff; text-decoration: underline;'>Just a Cat</a><br>",
-        boardgames: "<b>Board Games:</b> Big fan of modern board games (Eurogames and heavy strategy).<br>• <b>BoardGameGeek (BGG):</b> <a href='https://boardgamegeek.com/profile/FilipeCandeias/' target='_blank' style='color: #00aaff; text-decoration: underline;'>FilipeCandeias</a>",
-        movies: "<b>Movies & TV Shows:</b> Fascinated by comedy, mystery, sci-fi and action.<br>• <b>Letterboxd:</b> <a href='https://boxd.it/98HRZ' target='_blank' style='color: #00aaff; text-decoration: underline;'>FilipeCandeias</a>",
-        
-        notRecognized: "Command not recognized: "
+        about: "<strong>Overview:</strong> A visual sample of my world of interests. Explore the grid below to see a summary of my main hobbies, passimes, and favorite activities.",
+        gaming: "<strong>Video Games:</strong> In my free time, video games are my perfect escape. I have a strong preference for deep RPGs, powerful cinematic narratives, and open worlds that reward exploration and critical thinking.",
+        boardgames: "<strong>Board Games:</strong> A look into my gaming table. I love exploring strategy titles that challenge the mind, ranging from highly asymmetric, competitive setups to fluid mechanics of resource management, card play, and tactical planning.",
+        travel: "<strong>Travels:</strong> Fascinated by exploring new places and cultures, I always take the opportunity to document memories, landscapes, and new discoveries.",
+        movies: "<strong>Cinema & TV Shows:</strong> I love watching and analyzing Sci-Fi, Fantasy, and Thriller movies, tracking and logging everything via Letterboxd.",
+        sports: "<strong>Sports:</strong> Supporter of an active lifestyle, both playing and following. I balance my love for football, basketball, and volleyball with outdoor activities."
     }
 };
 
-terminalInput.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-        // 1. Limpa espaços e remove a barra '/' caso o utilizador a tenha digitado
-        let input = this.value.trim().toLowerCase().replace('/', '');
+const mainGalleryGrid = document.getElementById('main-gallery-grid');
+const activeTabTitle = document.getElementById('active-tab-title');
+const workspaceIntro = document.getElementById('workspace-intro'); // ADICIONADO
+const fileItems = document.querySelectorAll('.tree-item.file');
+
+// Variável global para sabermos qual o ficheiro atualmente aberto
+let currentFolderKey = 'about';
+
+function renderWorkspaceContent(folderKey, fileName) {
+    currentFolderKey = folderKey; // Atualiza o estado atual
+    const targetKey = commandGalleries[folderKey] ? folderKey : 'about'; 
+    const imagesArray = commandGalleries[targetKey];
+    
+    if(!mainGalleryGrid) return;
+    
+    // 1. Limpa o ecrã
+    mainGalleryGrid.innerHTML = '';
+    
+    // 2. Atualiza o título do separador
+    if(activeTabTitle) activeTabTitle.innerText = fileName;
+
+    // 3. Atualiza o texto de introdução dinamicamente
+    if (workspaceIntro && folderIntros[currentLang]) {
+        workspaceIntro.innerHTML = folderIntros[currentLang][targetKey] || "";
+    }
+
+    // 4. Injeta os novos cartões de imagem grandes na Grid
+    imagesArray.forEach(imgPath => {
+        const card = document.createElement('div');
+        card.className = 'workspace-card';
+        card.style.backgroundImage = `url('${imgPath}')`;
         
-        // Atalhos inteligentes (aliases) para o utilizador não falhar o comando
-        if (input === 'interests') input = 'interests';
-        if (input === 'gaming') input = 'gaming';
-        if (input === 'boardgame' || input === 'bgg') input = 'boardgames';
-        if (input === 'filmes' || input === 'movie') input = 'movies';
+        card.style.opacity = '0';
+        mainGalleryGrid.appendChild(card);
+        
+        setTimeout(() => {
+            card.style.opacity = '1';
+        }, 50);
+    });
 
-        const historicLine = document.createElement('div');
-        historicLine.innerHTML = `<span style="color: #00aaff">filipe@portfolio:~$</span> ${this.value}`;
-        terminalBody.insertBefore(historicLine, terminalInput.parentElement);
-
-        if (input === 'clear') {
-            const lines = terminalBody.querySelectorAll('div:not(.input-line)');
-            lines.forEach(line => line.remove());
-        } else if (input !== '') {
-            const outputLine = document.createElement('div');
-            outputLine.className = 'output';
-            
-            if (terminalCommands[currentLang][input]) {
-                // Usamos innerHTML nos comandos de interesses para renderizar os links <a> e negritos <b>
-                // Para os comandos normais que usam \n, substituímos por <br> para que quebrem a linha no HTML
-                const cmdOutput = terminalCommands[currentLang][input];
-                outputLine.innerHTML = cmdOutput.replace(/\n/g, '<br>');
-            } else {
-                outputLine.innerText = `${terminalCommands[currentLang].notRecognized}"${this.value.trim()}". ${currentLang === 'pt' ? "Digita 'help'" : "Type 'help'"}`;
-                outputLine.style.color = '#ff5f56';
-            }
-            terminalBody.insertBefore(outputLine, terminalInput.parentElement);
+    // 5. Atualiza a classe ativa na barra lateral
+    fileItems.forEach(item => {
+        if (item.getAttribute('data-cmd') === targetKey) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
         }
+    });
+}
 
-        this.value = '';
-        terminalBody.scrollTop = terminalBody.scrollHeight;
-    }
+// Escuta os cliques nos ficheiros da árvore esquerda
+fileItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const folderKey = this.getAttribute('data-cmd');
+        const fileName = this.innerText.trim();
+        renderWorkspaceContent(folderKey, fileName);
+    });
 });
 
-// ==========================================
-// DETEÇÃO DE IDIOMA VIA URL (Query Parameters)
-// ==========================================
-window.addEventListener('DOMContentLoaded', () => {
-    // 1. Cria um objeto para ler os parâmetros do URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const langParam = urlParams.get('lang'); // Vai buscar o valor de 'lang'
-
-    // 2. Se o parâmetro existir e for válido ('pt' ou 'en'), altera o idioma do site
-    if (langParam === 'pt' || langParam === 'en') {
-        currentLang = langParam; 
-        document.documentElement.lang = langParam;
-
-        // 3. Executa a função que acabámos de isolar lá em cima para reescrever o HTML
-        atualizarIdioma(); 
-    }
-});
+// CARREGAMENTO INICIAL
+renderWorkspaceContent('about', 'about_me.md');
