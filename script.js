@@ -7,7 +7,7 @@ const translations = {
         "nav-skills": "Competências",
         "nav-path": "Percurso",
         "nav-projects": "Projetos",
-        "nav-terminal": "Explorador",
+        "nav-interesses": "Interesses",
         "header": "Olá, eu sou o <span class=\"highlight\" data-key=\"filipe\">Filipe</span>",
         "filipe": "Filipe",
         "hero-subtitle": "Estudante de Engenharia Informática Aplicada",
@@ -18,7 +18,7 @@ const translations = {
         "about-text-p1": "Olá! O meu nome é Filipe Candeias.",
         "about-text-p2": "Sou estudante da Licenciatura em Engenharia Informática Aplicada na Escola Superior de Tecnologia e Gestão de Águeda (ESTGA), da Universidade de Aveiro.",
         "about-text-p3": "Sou natural e residente de Águeda. Desde cedo desenvolvi um grande interesse pela tecnologia e pela informática, procurando compreender o funcionamento das ferramentas digitais e explorar novas soluções para diferentes desafios.",
-        "about-text-p4": "Considero-me uma pessoa proativa, criativa e com uma forte capacidade de aprendizagem. Gosto de enfrentar novos desafios e de adquirir constantemente novos conhecimentos, tanto a nível académico como pessoal. Procuro sempre realizar o meu trabalho com dedicação e responsabilidade, mantendo uma atitude positiva e colaborativa em qualquer contexto.",
+        "about-text-p4": "Considero-me uma pessoa proativa, creative e com uma forte capacidade de aprendizagem. Gosto de enfrentar novos desafios e de adquirir constantemente novos conhecimentos, tanto a nível académico como pessoal. Procuro sempre realizar o meu trabalho com dedicação e responsabilidade, mantendo uma atitude positiva e colaborativa em qualquer contexto.",
         "about-text-p5": "Nos meus tempos livres, gosto de gaming, jogos de tabuleiro e construção com LEGO, atividades que estimulam o raciocínio lógico, a criatividade e a capacidade de resolução de problemas. Tenho também interesse pelo desporto, valorizando a prática de atividades físicas como forma de bem-estar e desenvolvimento pessoal.",
         "about-text-p6": "Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.",
         "about-cv": "Descarregar CV (PDF)",
@@ -73,7 +73,8 @@ const translations = {
         "proj3-desc": "Aplicação desenvolvida em Java para apoiar a gestão de eventos de espaços culturais, utilizando estruturas de dados.",
         "view-code": "Ver Código",
         
-        "terminal-title": "Explorador de Conteúdo",
+        "interesses-title": "Interesses",
+        "interesses-prompt": "Navega pelas pastas à esquerda para abrir as galerias de imagens na área de trabalho e ficares a saber mais sobre mim.",
         "footer-text": "&copy; 2026 Filipe. Desenvolvido com foco em Usabilidade & Performance.",
         "video-section-title": "Apresentação em Vídeo"
     },
@@ -82,7 +83,7 @@ const translations = {
         "nav-skills": "Skills",
         "nav-path": "Journey",
         "nav-projects": "Projects",
-        "nav-terminal": "Explorer",
+        "nav-interesses": "Interests",
         "header": "Hello, I am <span class=\"highlight\" data-key=\"filipe\">Filipe</span>",
         "filipe": "Filipe",
         "hero-subtitle": "Applied Informatics Engineering Student",
@@ -91,11 +92,11 @@ const translations = {
         "hero-btn-path": "View Journey",
         "about-title": "About Me",
         "about-text-p1": "Hello! My name is Filipe Candeias.",
-        "about-text-p2": "I am a student pursuing a Degree in Applied Informatics Engineering at ESTGA, University of Aveiro.",
-        "about-text-p3": "I was born and currently live in Águeda. From an early age, I developed a strong interest in technology and computer science.",
-        "about-text-p4": "I consider myself a proactive, creative person with a strong ability to learn. I enjoy facing new challenges and continuously acquiring new knowledge.",
-        "about-text-p5": "In my free time, I enjoy gaming, board games, and building with LEGO, activities that stimulate logical thinking and creativity.",
-        "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my development.",
+        "about-text-p2": "I am currently studying Applied Informatics Engineering at the Higher School of Technology and Management of Águeda, part of the University of Aveiro.",
+        "about-text-p3": "I was born and raised in Águeda, where I still live today. From an early age, I developed a strong interest in technology and computing, always seeking to understand how digital tools work and explore new solutions to different challenges.",
+        "about-text-p4": "I consider myself a proactive, creative person with a strong ability to learn. I enjoy taking on new challenges and continuously acquiring new knowledge, both academically and personally. I always strive to carry out my work with dedication and responsibility, maintaining a positive and collaborative attitude in any environment.",
+        "about-text-p5": "In my free time, I enjoy gaming, board games, and building with LEGO, activities that stimulate logical thinking, creativity, and problem-solving skills. I am also interested in sports and value physical activity as a way to promote well-being and personal development.",
+        "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my personal and professional development.",
         "about-cv": "Download CV (PDF)",
         "cv-file": "CV Inglês.pdf",
         "skills-title": "Skills",
@@ -148,7 +149,8 @@ const translations = {
         "proj3-desc": "Application developed in Java to support event management in cultural spaces, utilizing data structures.",
         "view-code": "View Code",
         
-        "terminal-title": "Content Explorer",
+        "interesses-title": "Interests",
+        "interesses-prompt": "Navigate through the folders on the left to open image galleries in the workspace and learn more about me.",
         "footer-text": "&copy; 2026 Filipe. Developed with a focus on Usability & Performance.",
         "video-section-title": "Video Presentation"
     }
@@ -170,7 +172,11 @@ let currentLang = 'pt';
 const langToggle = document.getElementById('lang-toggle');
 
 function atualizarIdioma() {
-    langToggle.innerText = currentLang.toUpperCase();
+    // MODIFICAÇÃO AQUI: Mostra o idioma oposto (o destino do clique)
+    if (langToggle) {
+        langToggle.innerText = currentLang === 'pt' ? 'EN' : 'PT';
+    }
+    
     const cvBtn = document.getElementById('cv-btn');
     if (cvBtn && translations[currentLang]["cv-file"]) {
         cvBtn.setAttribute('href', translations[currentLang]["cv-file"]);
@@ -189,31 +195,42 @@ function atualizarIdioma() {
             }
         }
     });
+
+    // Atualiza o texto do explorador se o elemento estiver no DOM
+    const workspaceIntroEl = document.getElementById('workspace-intro');
+    if (workspaceIntroEl && typeof currentFolderKey !== 'undefined' && folderIntros[currentLang]) {
+        const targetKey = folderIntros[currentLang][currentFolderKey] ? currentFolderKey : 'about';
+        workspaceIntroEl.innerHTML = folderIntros[currentLang][targetKey] || "";
+    }
 }
 
-langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'pt' ? 'en' : 'pt';
-    atualizarIdioma();
-});
-
-atualizarIdioma();
+// Ouvinte para o botão de alternar o idioma
+if (langToggle) {
+    langToggle.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        currentLang = currentLang === 'pt' ? 'en' : 'pt';
+        atualizarIdioma();
+    });
+}
 
 // ==========================================
 // 2. ALTERNADOR DE TEMA (Dark/Light Mode)
 // ==========================================
 const themeToggle = document.getElementById('theme-toggle');
-const themeIcon = themeToggle.querySelector('i');
+const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-        document.documentElement.removeAttribute('data-theme');
-        themeIcon.className = 'fas fa-moon';
-    } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeIcon.className = 'fas fa-sun';
-    }
-});
+if (themeToggle && themeIcon) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+            themeIcon.className = 'fas fa-moon';
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeIcon.className = 'fas fa-sun';
+        }
+    });
+}
 
 // ==========================================
 // 3. ACORDEÃO INTERATIVO (Linha de Tempo)
@@ -235,39 +252,23 @@ accordions.forEach(btn => {
 });
 
 // ==========================================
-// 4. SISTEMA DE REATIVIDADE DO EXPLORADOR (ATUALIZADO COM INTRODUÇÃO)
+// 4. DICIONÁRIOS E REATIVIDADE DO EXPLORADOR
 // ==========================================
 const commandGalleries = {
-    about: [
-        'img/v1.jpg', 'img/v3.jpg', 'img/bg1.jpg', 
-        'img/vg2.jpg', 'img/ms1.jpg', 'img/ms2.jpg' // 6 imagens
-    ],
-    gaming: [
-        'img/vg1.jpeg', 'img/vg2.jpg', 'img/vg3.png', 
-        'img/vg4.jpg', 'img/vg5.png', 'img/vg6.jpg' // 6 imagens
-    ],
-    boardgames: [
-        'img/bg1.jpg', 'img/bg2.jpg', 'img/bg3.jpg', 
-        'img/bg4.jpg', 'img/bg5.jpeg', 'img/bg6.jpg' // 6 imagens
-    ],
-    travel: [
-        'img/v1.jpg', 'img/v2.jpg', 'img/v3.jpg', 
-        'img/v4.jpg', 'img/v5.jpg', 'img/v6.jpg' // 6 imagens
-    ],
-    movies: [
-        'img/ms1.jpg', 'img/ms2.jpg', 'img/ms3.jpg', 
-        'img/ms4.jpg', 'img/ms5.jpg', 'img/ms6.jpg' // 6 imagens
-    ]
+    about: ['img/v1.jpg', 'img/bg1.jpg', 'img/v3.jpg', 'img/vg2.jpg', 'img/ms1.jpg', 'img/ms2.jpg'],
+    gaming: ['img/vg1.jpeg', 'img/vg2.jpg', 'img/vg3.png', 'img/vg4.jpg', 'img/vg5.png', 'img/vg6.jpg'],
+    boardgames: ['img/bg1.jpg', 'img/bg2.jpg', 'img/bg3.jpg', 'img/bg4.jpg', 'img/bg5.jpeg', 'img/bg6.jpg'],
+    travel: ['img/v1.jpg', 'img/v2.jpg', 'img/v3.jpg', 'img/v4.jpg', 'img/v5.jpg', 'img/v6.jpg'],
+    movies: ['img/ms1.jpg', 'img/ms2.jpg', 'img/ms3.jpg', 'img/ms4.jpg', 'img/ms5.jpg', 'img/ms6.jpg']
 };
 
-// NOVO: Dicionário de introduções textuais para cada pasta/ficheiro (Suporta Multilíngue)
 const folderIntros = {
     pt: {
         about: "<strong>Visão Geral:</strong> Uma amostra visual do meu universo de interesses. Explora a grelha abaixo para veres um resumo dos meus principais hobbies, passatempos e atividades favoritas.",
         gaming: "<strong>Jogos:</strong> Nos meus tempos livres, os videojogos são a minha fuga perfeita. Tenho uma enorme preferência por RPGs profundos, narrativas cinematográficas marcantes e mundos abertos que recompensam a exploração e o raciocínio.",
         boardgames: "<strong>Jogos de Tabuleiro:</strong> Um olhar sobre a minha mesa de jogo. Adoro explorar títulos de estratégia que desafiam o raciocínio, desde cenários altamente assimétricos e competitivos até mecânicas fluidas de gestão de recursos, cartas e planeamento tático.",
         travel: "<strong>Viagens:</strong> Fascinado por explorar novos lugares e culturas, aproveito sempre que posso para registar memórias, paisagens e novas descobertas pelo mundo.",
-        movies: "<strong>Cinema & Séries:</strong> Gosto de acompanhar e analisar obras de Ficção Científica, Fantasia e Suspense, organizando as minhas críticas e registos no Letterboxd.",
+        movies: "<strong>Cinema & Séries:</strong> Um olhar sobre as produções que mais me marcaram. Entre filmes de culto e séries imperdíveis, gosto de acompanhar boas histórias e de manter um registo de tudo o que assisto.",
         sports: "<strong>Desporto:</strong> Adepto de um estilo de vida ativo, tanto a praticar como a acompanhar. Divido o gosto pelo futebol, basquetebol e voleibol com atividades ao ar livre."
     },
     en: {
@@ -275,54 +276,48 @@ const folderIntros = {
         gaming: "<strong>Video Games:</strong> In my free time, video games are my perfect escape. I have a strong preference for deep RPGs, powerful cinematic narratives, and open worlds that reward exploration and critical thinking.",
         boardgames: "<strong>Board Games:</strong> A look into my gaming table. I love exploring strategy titles that challenge the mind, ranging from highly asymmetric, competitive setups to fluid mechanics of resource management, card play, and tactical planning.",
         travel: "<strong>Travels:</strong> Fascinated by exploring new places and cultures, I always take the opportunity to document memories, landscapes, and new discoveries.",
-        movies: "<strong>Cinema & TV Shows:</strong> I love watching and analyzing Sci-Fi, Fantasy, and Thriller movies, tracking and logging everything via Letterboxd.",
+        movies: "<strong>Cinema & TV Shows:</strong> A look at the productions that left a mark on me. Between cult movies and must-watch series, I love following great stories and keeping a log of everything I watch.",
         sports: "<strong>Sports:</strong> Supporter of an active lifestyle, both playing and following. I balance my love for football, basketball, and volleyball with outdoor activities."
     }
 };
 
 const mainGalleryGrid = document.getElementById('main-gallery-grid');
 const activeTabTitle = document.getElementById('active-tab-title');
-const workspaceIntro = document.getElementById('workspace-intro'); // ADICIONADO
+const workspaceIntro = document.getElementById('workspace-intro'); 
 const fileItems = document.querySelectorAll('.tree-item.file');
 
-// Variável global para sabermos qual o ficheiro atualmente aberto
 let currentFolderKey = 'about';
 
 function renderWorkspaceContent(folderKey, fileName) {
-    currentFolderKey = folderKey; // Atualiza o estado atual
+    currentFolderKey = folderKey; 
     const targetKey = commandGalleries[folderKey] ? folderKey : 'about'; 
     const imagesArray = commandGalleries[targetKey];
     
     if(!mainGalleryGrid) return;
     
-    // 1. Limpa o ecrã
     mainGalleryGrid.innerHTML = '';
-    
-    // 2. Atualiza o título do separador
     if(activeTabTitle) activeTabTitle.innerText = fileName;
 
-    // 3. Atualiza o texto de introdução dinamicamente
     if (workspaceIntro && folderIntros[currentLang]) {
-        workspaceIntro.innerHTML = folderIntros[currentLang][targetKey] || "";
+        workspaceIntro.innerHTML = folderIntros[currentLang][folderKey] || folderIntros[currentLang]['about'];
     }
 
-    // 4. Injeta os novos cartões de imagem grandes na Grid
-    imagesArray.forEach(imgPath => {
-        const card = document.createElement('div');
-        card.className = 'workspace-card';
-        card.style.backgroundImage = `url('${imgPath}')`;
-        
-        card.style.opacity = '0';
-        mainGalleryGrid.appendChild(card);
-        
-        setTimeout(() => {
-            card.style.opacity = '1';
-        }, 50);
-    });
+    if (imagesArray) {
+        imagesArray.forEach(imgPath => {
+            const card = document.createElement('div');
+            card.className = 'workspace-card';
+            card.style.backgroundImage = `url('${imgPath}')`;
+            card.style.opacity = '0';
+            mainGalleryGrid.appendChild(card);
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+            }, 50);
+        });
+    }
 
-    // 5. Atualiza a classe ativa na barra lateral
     fileItems.forEach(item => {
-        if (item.getAttribute('data-cmd') === targetKey) {
+        if (item.getAttribute('data-cmd') === folderKey) {
             item.classList.add('active');
         } else {
             item.classList.remove('active');
@@ -339,5 +334,6 @@ fileItems.forEach(item => {
     });
 });
 
-// CARREGAMENTO INICIAL
+// CARREGAMENTO INICIAL DO SITE
 renderWorkspaceContent('about', 'about_me.md');
+atualizarIdioma();
