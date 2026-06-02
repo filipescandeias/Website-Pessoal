@@ -23,6 +23,7 @@ const translations = {
         "about-text-p6": "Estou sempre disponível para aprender, crescer e abraçar novas experiências que contribuam para o meu desenvolvimento pessoal e profissional.",
         "about-cv": "Descarregar CV (PDF)",
         "cv-file": "CV Português.pdf",
+        "video-src": "https://youtube.com/embed/UmHi-4WTIXk",
         "skills-title": "Competências",
         "skills-backend": "Backend",
         "skills-frontend": "Frontend & Dados",
@@ -99,6 +100,7 @@ const translations = {
         "about-text-p6": "I am always eager to learn, grow, and embrace new experiences that contribute to my personal and professional development.",
         "about-cv": "Download CV (PDF)",
         "cv-file": "CV Inglês.pdf",
+        "video-src": "https://youtube.com/embed/mvprc_IAmPo",
         "skills-title": "Skills",
         "skills-backend": "Backend",
         "skills-frontend": "Frontend & Data",
@@ -172,31 +174,41 @@ let currentLang = 'pt';
 const langToggle = document.getElementById('lang-toggle');
 
 function atualizarIdioma() {
-    // MODIFICAÇÃO AQUI: Mostra o idioma oposto (o destino do clique)
+    // 1. Atualiza o texto do botão de alternância (mostra o idioma oposto ao atual)
     if (langToggle) {
         langToggle.innerText = currentLang === 'pt' ? 'EN' : 'PT';
     }
     
+    // 2. Atualiza o link de download do CV correspondente ao idioma
     const cvBtn = document.getElementById('cv-btn');
     if (cvBtn && translations[currentLang]["cv-file"]) {
         cvBtn.setAttribute('href', translations[currentLang]["cv-file"]);
     }
 
+    // 3. Atualiza o iframe do vídeo (Português ou Inglês)
+    const videoIframe = document.getElementById('portfolio-video');
+    if (videoIframe && translations[currentLang]["video-src"]) {
+        videoIframe.setAttribute('src', translations[currentLang]["video-src"]);
+    }
+
+    // 4. Traduz todos os elementos HTML que contêm o atributo [data-key]
     document.querySelectorAll('[data-key]').forEach(element => {
         const key = element.getAttribute('data-key');
         if (translations[currentLang][key]) {
             const icon = element.querySelector('i');
             if (icon) {
+                // Se o elemento tiver um ícone do FontAwesome, preserva o ícone e altera apenas o texto
                 element.innerHTML = '';
                 element.appendChild(icon);
                 element.innerHTML += ' ' + translations[currentLang][key];
             } else {
+                // Caso contrário, substitui diretamente o conteúdo de texto/HTML
                 element.innerHTML = translations[currentLang][key];
             }
         }
     });
 
-    // Atualiza o texto do explorador se o elemento estiver no DOM
+    // 5. Atualiza o texto de introdução do explorador de interesses (Workspace)
     const workspaceIntroEl = document.getElementById('workspace-intro');
     if (workspaceIntroEl && typeof currentFolderKey !== 'undefined' && folderIntros[currentLang]) {
         const targetKey = folderIntros[currentLang][currentFolderKey] ? currentFolderKey : 'about';
